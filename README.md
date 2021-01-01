@@ -1,2 +1,2 @@
-# Vue-Express-Boilerplate
-A simple boilerplate for creating a vue.js and express program
+# Star-Wars-Wiki
+A simple program to help me learn vue.js
