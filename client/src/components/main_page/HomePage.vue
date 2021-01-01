@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import LinkBar from "./LinkBar.vue"
+import LinkBar from "../link_bar/LinkBar.vue"
 
 export default {
   name: 'HelloWorld',

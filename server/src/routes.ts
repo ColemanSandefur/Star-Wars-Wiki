@@ -12,4 +12,15 @@ export default (app: express.Express) => {
             message: `Hello ${req.body.name} you are now registered! Have fun!`
         });
     });
+
+    app.get("/linkBar", (req, res) => {
+        res.send([
+            {name: "people", link: "/people"},
+            {name: "planets", link: "/planets"},
+            {name: "films", link: "/films"},
+            {name: "species", link: "/species"},
+            {name: "vehicles", link: "/vehicles"},
+            {name: "starships", link: "/starships"}
+        ]);
+    });
 }

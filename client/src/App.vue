@@ -27,4 +27,7 @@ html {
   height: 100vh;
   background-color: black;
 }
+body {
+  margin: 0;
+}
 </style>
