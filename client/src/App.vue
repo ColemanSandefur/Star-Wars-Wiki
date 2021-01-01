@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <img src="./assets/Star_Wars_Logo.svg" id="logo">
+    <link-bar></link-bar>
     <router-view/>
   </div>
 </template>
 
 <script>
+import LinkBar from "./components/link_bar/LinkBar.vue"
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    LinkBar
+  }
 }
 </script>
 

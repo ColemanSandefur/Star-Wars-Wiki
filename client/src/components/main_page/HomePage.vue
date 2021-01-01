@@ -1,12 +1,10 @@
 <template>
   <div class="hello">
-    <link-bar></link-bar>
     <h1>Welcome to the Star Wars wiki!</h1>
   </div>
 </template>
 
 <script>
-import LinkBar from "../link_bar/LinkBar.vue"
 
 export default {
   name: 'HelloWorld',
@@ -16,7 +14,6 @@ export default {
     }
   },
   components: {
-    LinkBar
   }
 }
 </script>
