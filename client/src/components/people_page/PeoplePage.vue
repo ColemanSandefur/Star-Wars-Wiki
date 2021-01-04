@@ -17,7 +17,7 @@ export default {
   name: "PeoplePage",
   data() {
     return {
-      person_id: 1,
+      person_id: 43,
       person_data: {}
     }
   },
