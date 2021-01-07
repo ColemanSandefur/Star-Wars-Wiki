@@ -13,8 +13,8 @@ app.use(cors());
 import {StarWarsApiCache} from "./starWarsApiCache"
 
 StarWarsApiCache.loadAPI().then(() => {
-    console.log(Object.keys(StarWarsApiCache.people).length,Object.keys(StarWarsApiCache.planets).length);
-    StarWarsApiCache.crossReference();
+    console.log(Object.keys(StarWarsApiCache.people).length, Object.keys(StarWarsApiCache.planets).length);
+    console.log(StarWarsApiCache.people[1]);
 });
 
 // // requests to this server goes to routes.ts
