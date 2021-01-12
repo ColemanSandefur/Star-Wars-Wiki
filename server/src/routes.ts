@@ -25,9 +25,21 @@ export default (app: express.Express) => {
         ]);
     });
 
-    app.get("/people/:person_id", (req, res) => {
-        let person_id = <number><any>req.params.person_id;
-        console.log(person_id);
-        res.send(StarWarsApiCache.people[person_id]);
+    app.get("/people/:id", (req, res) => {
+        let id = <number><any>req.params.id;
+        console.log(id);
+        res.send(StarWarsApiCache.people[id]);
+    });
+
+    app.get("/planets/:id", (req, res) => {
+        let id = <number><any>req.params.id;
+        console.log(id);
+        res.send(StarWarsApiCache.planets[id]);
+    })
+
+    app.get("/films/:id", (req, res) => {
+        let id = <number><any>req.params.id;
+        console.log(id);
+        res.send(StarWarsApiCache.films[id]);
     })
 }
